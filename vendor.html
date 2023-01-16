@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>Amazcart</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/css/jquery-ui.css" />
+    <link rel="stylesheet" href="vendors/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/css/jquery.data-tables.css">
+    <link rel="stylesheet" href="vendors/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="vendors/css/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" href="vendors/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="vendors/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="vendors/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="vendors/css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/css/flaticon.css" />
+    <!-- <link rel="stylesheet" href="vendors/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="vendors/css/magnific-popup.css" />
+    <link rel="stylesheet" href="vendors/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/documentation.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+</head>
+
+
+<body class="version1" data-spy="scroll" data-target="#sidebar" data-offset="50">
+    <div class="main-wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <a href="index.html">
+                    <!-- <img src="img/logo.png" alt=""> -->
+                </a>
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li>
+                    <a href="#initiate" class="active">
+                        <span class="fa fa-angle-double-right"></span>
+                        initiate
+                    </a>
+                </li>
+                <li>
+                    <a href="#Dashboard">
+                        <span class="fa-solid fa-chart-line"></span>
+                        Dashboard
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="#subSubscriptionPaymentSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa-solid fa-credit-card"></span>
+                        Subscription Payment
+                    </a>
+                    <ul class="collapse list-unstyled" id="subSubscriptionPaymentSetting">
+                        <li>
+                            <a href="#SubscriptionPayment" class="spy_scroll">Subscription Payment</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#subMenuWalletSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa fa-book"></span>
+                        My Wallet
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuWalletSetting">
+                        <li>
+                            <a href="#MyWallet" class="spy_scroll">Transactions</a>
+                        </li>
+                        <li>
+                            <a href="#Withdraw" class="spy_scroll">Withdraw</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#subMyStaffSetting" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="fa-solid fa-user-check"></span>
+                        My Staff
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMyStaffSetting">
+                        <li>
+                            <a href="#Staff" class="spy_scroll">My Staff</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#subMenuProductsSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa fa-clipboard-list"></span>
+                        Products
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuProductsSetting">
+                        <li>
+                            <a href="#ProductList" class="spy_scroll">My Product List</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#subMenuReviewSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa fa-child"></span>
+                        Review
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuReviewSetting">
+                        <li>
+                            <a href="#MyProductReview" class="spy_scroll">My Product Review</a>
+                        </li>
+                        <li>
+                            <a href="#MyReview" class="spy_scroll">My Review</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#subMenuOrderManageSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa fa-check"></span>
+                        Order Manage
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuOrderManageSetting">
+                        <li>
+                            <a href="#MyOrder" class="spy_scroll">My Order</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#subMenuShippingSetting" data-toggle="collapse" aria-expanded="false"
+                       class="dropdown-toggle">
+                        <span class="fa fa-check"></span>
+                        Shipping
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuShippingSetting">
+                        <li>
+                            <a href="#shipping_rates" class="spy_scroll">Shipping Rates</a>
+                        </li>
+                        <li>
+                            <a href="#pickup_locations" class="spy_scroll">Pickup Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="#shipping_orders" class="spy_scroll">Shipping Orders</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#subMenuRefundManageSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa-solid fa-arrow-rotate-right"></span>
+                        Refund Manage
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuRefundManageSetting">
+                        <li>
+                            <a href="#MyRefundRequests" class="spy_scroll">My Refund Requests</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#subMenuSupportTicketSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa-solid fa-ticket-simple"></span>
+                        Support Ticket
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuSupportTicketSetting">
+                        <li>
+                            <a href="#MyTicket" class="spy_scroll">My Ticket</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#subMenuAdminReportsSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa-solid fa-flag"></span>
+                        My Reports
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuAdminReportsSetting">
+                        <li>
+                            <a href="#ProductStock" class="spy_scroll">Product</a>
+                        </li>
+                        <li>
+                            <a href="#TopCustomer" class="spy_scroll">Top customer</a>
+                        </li>
+                        <li>
+                            <a href="#TopSellingItem" class="spy_scroll">Top selling item</a>
+                        </li>
+                        <li>
+                            <a href="#Order" class="spy_scroll">Order</a>
+                        </li>
+                        <li>
+                            <a href="#Review" class="spy_scroll">Review</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#sidebarManageSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa-solid fa-bars"></span>
+                        Sidebar Manage
+                    </a>
+                    <ul class="collapse list-unstyled" id="sidebarManageSetting">
+                        <li>
+                            <a href="#SidebarManage" class="spy_scroll">Sidebar Manage</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#subMenuCustomerPanelSetting" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">
+                        <span class="fa-solid fa-user-ninja"></span>
+                        Customer Panel
+                    </a>
+                    <ul class="collapse list-unstyled" id="subMenuCustomerPanelSetting">
+                        <li><a class="spy_scroll" href="#MyPurchases">My Purchases</a></li>
+                        <li><a class="spy_scroll" href="#GiftCard">Gift Card</a></li>
+                        <li><a class="spy_scroll" href="#DigitalProduct">Digital Product</a></li>
+                        <li><a class="spy_scroll" href="#MyWishlist">My Wishlist</a></li>
+                        <li><a class="spy_scroll" href="#RefundDispute">Refund Dispute</a></li>
+                        <li><a class="spy_scroll" href="#MyCoupon">My Coupon</a></li>
+                        <li><a class="spy_scroll" href="#MyAccount">My Account</a></li>
+                        <li><a class="spy_scroll" href="#MyReferral">My Referral</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <!-- Page Content  -->
+        <div id="main-content">
+            <nav class="navbar navbar-expand-lg">
+
+            </nav>
+
+
+            <section class="mb-40" id="initiate">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row border-bottom text-center">
+                            <div class="col-lg-12">
+                                <h1>Welcome</h1>
+                                <h3>To</h3>
+                                <h1 class="mb-20">Amazcart ultimate Ecommerce</h1>
+
+                                <h3>Ultimate solution for your ecommerce business</h3>
+                                <h1>By</h1>
+                                <h1> <a href="https://spondonit.com/" target="blank"> SPONDONIT</a></h1>
+                            </div>
+                        </div>
+                        <div class="row mt-40 border-bottom">
+                            <div class="col-lg-12">
+                                <p>
+                                    <!-- <strong>Email:</strong><a
+                                        href="mailto:support@spondonit.com">support@spondonit.com</a><br> -->
+                                    <strong>Demo-Web : </strong><a href="https://amazmulti.infixlive.com/" target="blank">
+                                        amazmulti.infixlive.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mt-40">
+                            <div class="col-lg-12">
+                                <p>We would like to thank you for purchasing Amazcart Ecommerce System! We are very
+                                    pleased you
+                                    have chosen Amazcart Ecommerce System for your business, you will not be
+                                    disappointed!
+                                    Before you get started, please be sure to always check out these documentation
+                                    files. We outline all kinds of good information, and provide you with all the
+                                    details you need to use Amazcart Ecommerce System. </p>
+
+                                <p>If you are unable to find your answer here in our documentation, watch our Video
+                                    Tutorials, you can also visit our Help & Support. Chances are your question or issue
+                                    have been brought up already and the answer is waiting to be found. If you are
+                                    unable to find it anywhere, then please go our Support section and open a new
+                                    Support Ticket with all the details we need. Please be sure to include your site URL
+                                    as well. Thank you, we hope you enjoy using Amazcart Ecommerce System!</p>
+                            </div>
+
+
+                            <div class="col-md-12 docs-initiate text-center mt-40">
+
+                                <a class="primary-btn small fix-gr-bg"
+                                    href="https://www.youtube.com/watch?v=DhZ6p_tYnpk&list=PLiYjRtR_wL1UPUXpYHjPZGI9qQ-awTQat"
+                                    target="blank">Video Tutorials</a>
+                                <a class="primary-btn small tr-bg" href="https://ticket.spondonit.com/help-center"
+                                    target="blank">Help & Supports</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="GetSupport">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Get Support</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Get Support from Amazcart</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <p>To get Technical/Sales support. You must create Amazcart Account first.</p>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3>Contact Info</h3>
+                                        <!-- <p style="margin: 0px !important;"> <b>Email:</b> <a
+                                                href="mailto:support@spondonit.com"> support@spondonit.com</a></p> -->
+                                        <!-- <p style="margin: 0px !important;"> <b>Web:</b> <a
+                                                href="https://infixmart.com/">infixmart.com</a></p> -->
+                                        <p style="margin: 0px !important;"> <b>Support:</b> <a
+                                                href="https://ticket.spondonit.com/help-center">ticket.spondonit.com</a>
+                                        </p>
+
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="img/support.png" class="img img-responsive" style="width: 100%">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard -->
+            <section class="infix-documentation mt-40" id="Dashboard">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Dashboard</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Dashboard</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img class="img img-responsive dashboard1" src="img/vendor/dashboard/newdashboard.png">
+                                <h3 class="mt-40">1. Dashboard</h3>
+                                <p>At the top menu of left sidebar is Dashboard. There are several view port in
+                                    dashboard. we can see the number of products, seller, customer etc. at a glance.
+                                    Summary of the system is important. After login
+                                    vendor can see the update for that day.</p>
+
+                                <h3 class="mt-40">2. Toggle Bar</h3>
+                                <p>To hide and show the side menu bar.</p>
+                                <h3 class="mt-40">3. Website</h3>
+                                <p>The button lead you to the main website. </p>
+
+                                <h3 class="mt-40">4. Language</h3>
+                                <p> Amazcart delivered to you equiped with diffrent languages : English and
+                                    Bangla. You can also add laguage with your own customization.</p>
+
+                                <h3 class="mt-40">5. Quick Menu</h3>
+                                <p> Most important quick are there so that a vendor can find easily. </p>
+
+                                <h3 class="mt-40">6. Knowledge Base </h3>
+                                <p> This link can lead the vendor to Knowledge Base. </p>
+
+                                <h3 class="mt-40">7. Notification</h3>
+                                <p>Different types of notifications are created in the system. You can find it here.
+                                </p>
+
+                                <h3 class="mt-40">8. Profile</h3>
+                                <p>The vendors can see their profile, change their existing password, update profile
+                                    setting etc. Logout button at the
+                                    bottom of this profile section. </p>
+
+
+                                <h3 class="mt-40">9. Shop Link</h3>
+                                <p>Visit your shop in the website. </p>
+
+                                <h3 class="mt-40">10. Today</h3>
+                                <p>When vendor login to the system he shows the todays summary. </p>
+
+                                <h3 class="mt-40">11. This Week</h3>
+                                <p>By clicking this week vendor can show this week summary. </p>
+                                <h3 class="mt-40">12. This Month</h3>
+                                <p>By clicking this month vendor can show this month summary. </p>
+                                <h3 class="mt-40">13. This Year</h3>
+                                <p>By clicking this year vendor can show this year summary. </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="SubscribeContent">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Top Sale Product and Latest Uploaded Product List</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img class="img img-responsive dashboard1 mb-40" src="img/vendor/dashboard/2.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="SubscribeContent">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Latest Order and Latest Refund Request</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img class="img img-responsive dashboard1 mb-40" src="img/vendor/dashboard/3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Personal Notification Setting</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img class="img img-responsive dashboard1 mb-40" src="img/user_notification.png">
+                                <h3 class="mt-40">Personal Notification Setting</h3>
+                                <p>You can set up which notification you want to get.</p>
+                                <h3 class="mt-40">1.Setting</h3>
+                                <p>Lead you to the notification setting page.</p>
+                                <h3 class="mt-40">2.Read All</h3>
+                                <p>This will mark the notification as read.</p>
+                                <h3 class="mt-40">3.View</h3>
+                                <p>View all notifications.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="SubscribeContent">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Shop Link Website View</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img class="img img-responsive dashboard1" src="img/vendor/dashboard/4.png">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Subscription Payment -->
+
+            <section class="infix-documentation mt-40" id="SubscriptionPayment">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Subscription Payment</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Subscription Payment</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/Seller/subscription.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transactions -->
+            <section class="infix-documentation mt-40" id="MyWallet">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Transactions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Transactions</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/wallet/mywallet.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Transactions</h3>
+                                <p>This is your personal wallet. You can recharge to it and buy anything from the
+                                    website using wallet balance.</p>
+                                <h3 class="mt-40">1. Recharge </h3>
+                                <p>Vendor can recharge from here.</p>
+                                <h3 class="mt-40">2. Withdraw </h3>
+                                <p>Vendor can withdraw from here.</p>
+
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Wallet (Recharge)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/wallet/mywallet2.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1. Continue </h3>
+                                <p>Recharge process will start after pressing continue button.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Wallet (Withdraw)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/wallet/mywallet3.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1. Send </h3>
+                                <p>Withdraw request will be sent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="Withdraw">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Withdraw</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Withdraw</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/wallet/withdraw.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Withdraw</h3>
+                                <p>You can see the withdraw requests. </p>
+                                <h3 class="mt-40">1. Edit </h3>
+                                <p>Withdraw details can be updated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Staff -->
+            <section class="infix-documentation mt-40" id="Staff">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Staff</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Staff</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/staff/1.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Staff</h3>
+                                <p>Staffs are like your company employee. You can use them to do specific task. </p>
+                                <h3 class="mt-40">1. Add New Staff </h3>
+                                <p>Vendor can create new staff.</p>
+                                <h3 class="mt-40">2. Action </h3>
+                                <p>Vendor can view, edit and delete staff.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Staff (Create)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/staff/2.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1. Save</h3>
+                                <p>Save the staff.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Staff (Access Permission)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/staff/3.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Access Permission</h3>
+                                <p>Every staff and user has a specific role. Role means what a user can do. Different
+                                    types of permissions are given to a specific role. </p>
+                                <h3 class="mt-40">1. Submit</h3>
+                                <p>Vendor can set what a staff can do. Specific staff can perform specific task. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Product -->
+            <section class="infix-documentation mt-40" id="ProductList">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Product List</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Product List</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/1.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Product List</h3>
+                                <p>You can find all the product list here. </p>
+                                <h3 class="mt-40">1. Product List </h3>
+                                <p>Product list is shown here.</p>
+                                <h3 class="mt-40">2. Action</h3>
+                                <p>Vendor can view, edit and delete the product.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Product List</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/2.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Alert List</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/3.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Out Of Stock List</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/4.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Disabled Product List</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/5.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Add Product</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/6.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40"></h3>
+                                <p>New or existing product can be added.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Add New Product</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/7.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1. Save</h3>
+                                <p>Save the product.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Add Existing Product</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/product/8.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1. Save</h3>
+                                <p>Save the product.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Review -->
+
+
+            <!--My Product Review -->
+            <section class="infix-documentation mt-40" id="MyProductReview">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Product Review</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Product Review</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/review/myproductreview.png"
+                                    class="img img-responsive general-setting documentationImg">
+
+                                <h3 class="mt-40">My Product Review</h3>
+                                <p>The reviews of your own product. You can also reply to the review.</p>
+                                <h3 class="mt-40">1. Reply</h3>
+                                <p>Reply to customer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Product Review</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/review/myproductreview2.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--My Review -->
+            <section class="infix-documentation mt-40" id="MyReview">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Review</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Review</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/review/myreview.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">My Review</h3>
+                                <p> As you are a seller , user can also review your store. You can find your review
+                                    here. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order Manage -->
+
+            <!--My Order -->
+            <section class="infix-documentation mt-40" id="MyOrder">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30"> Order</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Confirmed Order</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/order/myorder1.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">My Order</h3>
+                                <p>Here you can find the order of your product. In different tabs you can find different
+                                    order list.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Shipping Rates -->
+            <section class="infix-documentation mt-40" id="shipping_rates">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Shipping Rates</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Shipping Rates</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/shipping/shipping_method.png"
+                                     class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1.Shipping Rates</h3>
+                                <p>You can find all shipping rates list. </p>
+                                <h3 class="mt-40">2.Add New Rates </h3>
+                                <p>Add new shipping rates shown here.</p>
+                                <h3 class="mt-40">3.Activation </h3>
+                                <p>You can active / inactive shipping rates.</p>
+                                <h3 class="mt-40">4.Action </h3>
+                                <p>Update & Delete shipping rates shown here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Pickup Locations -->
+            <section class="infix-documentation mt-40" id="pickup_locations">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Pickup Locations</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Pickup Locations</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/shipping/pickup_locations.png"
+                                     class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1.Pickup Locations</h3>
+                                <p>You can find all pickup location list. </p>
+                                <h3 class="mt-40">2.Add New Pickup Location </h3>
+                                <p>Add new pickup location shown here.</p>
+                                <h3 class="mt-40">3.Action </h3>
+                                <p>Update, Details & Delete Pickup Location shown here.</p>
+                                <h3 class="mt-40">4.Activation </h3>
+                                <p>You can active / inactive pickup locations.</p>
+                                <h3 class="mt-40">5.Set Pickup Location </h3>
+                                <p>You can set default pickup locations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Shipping Orders -->
+            <section class="infix-documentation mt-40" id="shipping_orders">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Shipping Orders</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Shipping Orders</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/shipping/shipping.png"
+                                     class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1.Shipping Orders</h3>
+                                <p>You can find order list for shipping. </p>
+                                <h3 class="mt-40">2.Order Filter</h3>
+                                <p>You can order filter by date, carrier, shipping method, tracking ID.</p>
+                                <h3 class="mt-40">3.Change Pickup Point </h3>
+                                <p>You can change pickup point when shipping.</p>
+                                <h3 class="mt-40">4.Action </h3>
+                                <p>You can generate label, invoice ,packaging & shipping.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Completed Order</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/order/myorder2.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Pending Payment Order</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/order/myorder3.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Refused Order</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/order/myorder4.png"
+                                    class="img img-responsive general-setting documentationImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="MyOrder">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Order Details</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/order/5.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1. Print</h3>
+                                <p>Vendor can print the order details page.</p>
+                                <h3 class="mt-40">2. Update</h3>
+                                <p>Vendor can update delivery status.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Refund Manage -->
+
+            <!--My Refund Requests -->
+            <section class="infix-documentation mt-40" id="MyRefundRequests">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Refund Requests</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Refund Requests</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/refund-manage/myrefund.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">My Refund Requests</h3>
+                                <p>As you are a seller you will find your own product refund requests here.</p>
+
+                                <h3 class="mt-40">1. Action </h3>
+                                <p>View refund details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- System Settings -->
+
+            <!-- Support Ticket -->
+
+            <!-- My Ticket -->
+            <section class="infix-documentation mt-40" id="MyTicket">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Ticket</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Ticket</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/supportticket/1.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">My Ticket</h3>
+                                <p>You will find your own support ticket which you created.</p>
+                                <h3 class="mt-40">1. Search </h3>
+                                <p>Search your support ticket according to category, priority and status.</p>
+                                <h3 class="mt-40">2. Action </h3>
+                                <p>View and edit your support ticket.</p>
+                                <h3 class="mt-40">3. Add New </h3>
+                                <p>Create new support ticket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Support Ticket (Create)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/supportticket/2.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">1. Create Ticket</h3>
+                                <p>Save the support ticket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="ProductStock">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Product</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Product</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/report/product.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Product</h3>
+                                <p>Product stock list is here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="TopCustomer">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Top Customer</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Top Customer</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/adminreport/top_customer.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Top Customer</h3>
+                                <p>You can find the top customer who spent the most.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="TopSellingItem">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Top Selling Item</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Top Selling Item</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/adminreport/top_selling_item.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Top Selling Item</h3>
+                                <p>You can find the report of product which has sold the most.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="Order">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Order</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Order</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/adminreport/order.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Order</h3>
+                                <p>You can find the order report here. You can filter the report according to your
+                                    necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="infix-documentation mt-40" id="Review">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Review</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Review</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/report/review.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Review</h3>
+                                <p>You can find the product review report here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infix-documentation mt-40" id="SidebarManage">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Sidebar Manage</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Sidebar Manage</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/vendor/sidebar.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Sidebar Manage</h3>
+                                <p>You can rearrenge the sidebar from here by drag and drop. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Customer Panel -->
+            <!-- My Purchases -->
+            <section class="infix-documentation mt-40" id="MyPurchases">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Purchases</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Purchases</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/mypurchase.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">My Purchase</h3>
+                                <p>Whatever you purchase from the website you can find it here. You can also see
+                                    different types of details of your orders. </p>
+                                <h3 class="mt-40">1. Purchase List </h3>
+                                <p>View the purchase products.</p>
+                                <h3 class="mt-40">2. To Pay</h3>
+                                <p>View the paying product list.</p>
+                                <h3 class="mt-40">3. To Ship</h3>
+                                <p>View the shipping product list.</p>
+                                <h3 class="mt-40">4. To Recieve</h3>
+                                <p>View the reveiving product list.</p>
+                                <h3 class="mt-40">5. Download Invoice</h3>
+                                <p>Download the invoice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Gift Card -->
+            <section class="infix-documentation mt-40" id="GiftCard">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Gift Card</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Gift Card</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/giftcard.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Gift Card</h3>
+                                <p>If you buy any gift card, you can find it here. You can use the gift card to recharge
+                                    your wallet.</p>
+                                <h3 class="mt-40">1. View </h3>
+                                <p>View the secret code.</p>
+                                <h3 class="mt-40">2. Redeem </h3>
+                                <p>By clicking the redeem button you can add the balance to your wallet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Digital Product -->
+            <section class="infix-documentation mt-40" id="DigitalProduct">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Digital Product</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Digital Product</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/digital_purchased.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Digital Product</h3>
+                                <p>If you buy any digital product , you can find it here.</p>
+                                <h3 class="mt-40">1. Save </h3>
+                                <p>Save the setting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- My Wishlist -->
+            <section class="infix-documentation mt-40" id="MyWishlist">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Wishlist</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Wishlist</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/mywishlist.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Wishlist</h3>
+                                <p>If you add any product to your wishlist you can find it here. /p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Refund Dispute -->
+            <section class="infix-documentation mt-40" id="RefundDispute">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">Refund & Dispute</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart Refund & Dispute</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/refund.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">Refund & Dispute </h3>
+                                <p>When you request any product for refund You can see it here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- My Coupon -->
+            <section class="infix-documentation mt-40" id="MyCoupon">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Coupon</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Coupon</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/coupon.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">My Coupon</h3>
+                                <p>If you want to save any coupon for later use you can save it here.</p>
+                                <h3 class="mt-40">1. Add </h3>
+                                <p>Add the coupon for later use.</p>
+                                <h3 class="mt-40">2. Delete </h3>
+                                <p>Delete the coupon.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- My Account -->
+            <section class="infix-documentation mt-40" id="MyAccount">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Account</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Account</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/profile.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">My Account</h3>
+                                <p>You can find your personal information here.</p>
+                                <h3 class="mt-40">2. Update </h3>
+                                <p>Update basic information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Account(Change Password)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/profile2.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">4. Update</h3>
+                                <p>Update the old password.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Account(Address)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/profile3.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">6. Add New Address</h3>
+                                <p>You can add new address to your account.</p>
+                                <h3 class="mt-40">7. Edit</h3>
+                                <p>Address can be edited.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="">
+                <div class="container-fluid p-0">
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Account</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/profile4.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40">8. Save</h3>
+                                <p>Save the new address.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infix-documentation mt-40" id="MyReferral">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-lg-4 no-gutters">
+                            <div class="main-title">
+                                <h3 class="mb-30">My Referral</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box ">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title">
+                                    <h3 class="mb-30 text-center">Amazcart My Referral</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <img src="img/customerpanel/my_referral.png"
+                                    class="img img-responsive general-setting documentationImg">
+                                <h3 class="mt-40"> My Referral</h3>
+                                <p>Using referral code user can get discount. You can get your referral code from here
+                                    and see the users who used your referral code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--            End Parent Panel-->
+        </div>
+    </div>
+
+    <!-- ================Footer Area ================= -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================End Footer Area ================= -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendors/js/jquery-3.2.1.min.js">
+    </script>
+    <script src="vendors/js/jquery-ui.js">
+    </script>
+    <script src="vendors/js/jquery.data-tables.js">
+    </script>
+    <script src="vendors/js/dataTables.buttons.min.js">
+    </script>
+    <script src="vendors/js/buttons.flash.min.js">
+    </script>
+    <script src="vendors/js/jszip.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js">
+    </script>
+    <script src="vendors/js/buttons.html5.min.js">
+    </script>
+    <script src="vendors/js/buttons.print.min.js">
+    </script>
+    <script src="vendors/js/dataTables.rowReorder.min.js">
+    </script>
+    <script src="vendors/js/dataTables.responsive.min.js">
+    </script>
+    <script src="vendors/js/buttons.colVis.min.js">
+    </script>
+    <script src="vendors/js/popper.js">
+    </script>
+    <script src="vendors/js/bootstrap.min.js">
+    </script>
+    <script src="vendors/js/nice-select.min.js">
+    </script>
+    <script src="vendors/js/jquery.magnific-popup.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2. 18.1/moment.js" type="text/javascript"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4. 17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="vendors/js/bootstrap-datepicker.min.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sections = [];
+            var scrolled_id = false;
+            var id = false;
+            var $navbar = $('#sidebar');
+            var $navbar__links = $navbar.find('.spy_scroll');
+
+            $navbar__links.each(function () {
+                sections.push($($(this).attr('href')));
+            });
+
+            $('.spy_scroll').bind('click', function (event) {
+                var $anchor = $(this);
+                var headerH = '0';
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+                }, 5000, 'easeInOutExpo');
+                event.preventDefault();
+            });
+
+            $(window).scroll(function (e) {
+                e.preventDefault();
+                var scrollTop = $(this).scrollTop() + ($(window).height() / 3);
+
+
+                for (var i in sections) {
+                    var section = sections[i];
+
+                    if (scrollTop > section.offset().top) {
+                        scrolled_id = section.attr('id');
+                    }
+
+                    if (scrolled_id !== id) {
+                        id = scrolled_id;
+
+                        $navbar__links.removeClass('spy_scroll--current');
+
+                        $('a[href="#' + id + '"]', $navbar).addClass('spy_scroll--current');
+                        $('a[href="#' + id + '"]', $navbar).closest('.list-unstyled').addClass('show');
+                        $('a[href="#' + id + '"]', $navbar).closest('.list-unstyled').siblings('.dropdown-toggle').addClass('active');
+                        // $('a[href="#' + id + '"]', $navbar).closest('.list-unstyled').addClass('active'); 
+
+
+                    }
+                }
+            });
+
+            $(window).trigger('scroll');
+        });
+
+    </script>
+</body>
+
+</html>

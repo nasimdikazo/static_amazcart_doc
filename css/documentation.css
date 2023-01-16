@@ -1,0 +1,114 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: SPONDON IT
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: INFIX SCHOOL 
+@Developed By: MD RASHEDUZZAMAN
+Author E-mail: jmrashed@gmail.com
+
+=====================================================================*/
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Medium Layout: 1280px */
+/* Tablet Layout: 768px */
+/* Mobile Layout: 320px */
+/* Wide Mobile Layout: 480px */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.content-list ul li{
+	list-style: circle;
+}
+p{
+	margin-top: 20px;
+	color: black;
+}
+.mtb{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.infix-documentation{
+	margin-top: 60px;
+}
+.border{
+	border: 1px solid #ddd;
+}
+
+.p-5{
+	padding: 5px;
+}
+.p-10{
+	padding: 10px;
+}
+.p-15{
+	padding: 15px;
+}
+
+.email-setting{
+	width:100%;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.documentationImg{
+	width:100%;
+	height: auto;
+}
+.cPanelLogin{
+	text-align: center;
+	width: 20%;
+	margin-bottom: 25px; 
+}
+.install-dbwizard{
+
+}
+
+.step{
+	width: 80%; 
+	margin-bottom: 25px; 
+	padding: 5px;
+}
+.step1{
+	width: 30%; 
+	margin-bottom: 25px; 
+	padding: 5px;
+}
+.step2{
+	width: 30%; 
+	margin-bottom: 25px;
+	padding: 5px;
+}
+.step3{
+	width: 30%; 
+	margin-bottom: 25px;
+	padding: 5px;
+}
+.step4{
+	width: 30%; 
+	margin-bottom: 25px;
+	padding: 5px;
+}
+.system-upgrade{
+	width: 100%;
+}
+.dashboard1{
+	width: 100%;
+}
+.spy_scroll--current{
+    color: #ffffff !important;
+    background: linear-gradient(#c738d8, #7c32ff) !important;
+    border-left: 6px solid #7c32ff !important;
+    border-image-source: linear-gradient(#c738d8, #7c32ff) !important;
+    border-image-slice: 6;
+}
